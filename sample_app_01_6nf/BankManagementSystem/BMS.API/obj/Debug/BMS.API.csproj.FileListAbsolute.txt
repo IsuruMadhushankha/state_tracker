@@ -1,0 +1,5 @@
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.API\bin\Debug\BMS.API.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.API\bin\Debug\BMS.API.pdb
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.API\obj\Debug\ResolveAssemblyReference.cache
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.API\obj\Debug\BMS.API.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.API\obj\Debug\BMS.API.pdb

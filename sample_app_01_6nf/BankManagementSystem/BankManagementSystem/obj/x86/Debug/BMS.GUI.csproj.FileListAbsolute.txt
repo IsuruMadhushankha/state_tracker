@@ -1,0 +1,9 @@
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\bin\Debug\BankManagementSystem.exe
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\bin\Debug\BankManagementSystem.pdb
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\BankManagementSystem.Form1.resources
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\BankManagementSystem.Properties.Resources.resources
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\BankManagementSystem.exe
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BankManagementSystem\obj\x86\Debug\BankManagementSystem.pdb
