@@ -1,0 +1,10 @@
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BMS.BL.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BMS.BL.pdb
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\obj\Debug\ResolveAssemblyReference.cache
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\obj\Debug\BMS.BL.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\obj\Debug\BMS.BL.pdb
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BankDatabase6NF.sdf
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BMS.CORE.dll
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BMS.DBH.dll
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BMS.CORE.pdb
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.BL\bin\Debug\BMS.DBH.pdb

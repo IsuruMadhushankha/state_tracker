@@ -1,0 +1,10 @@
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BankDatabase6NF.sdf
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BMS.Testing.exe
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BMS.Testing.pdb
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BMS.DBH.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BMS.DBH.pdb
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\obj\x86\Debug\BMS.Testing.exe
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\obj\x86\Debug\BMS.Testing.pdb
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BMS.CORE.dll
+C:\Users\ISURU\documents\visual studio 2010\Projects\BankManagementSystem\BMS.Testing\bin\Debug\BMS.CORE.pdb

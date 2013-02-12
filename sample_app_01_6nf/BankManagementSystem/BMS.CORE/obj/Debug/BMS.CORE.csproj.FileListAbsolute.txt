@@ -1,0 +1,5 @@
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.CORE\bin\Debug\BMS.CORE.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.CORE\bin\Debug\BMS.CORE.pdb
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.CORE\obj\Debug\ResolveAssemblyReference.cache
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.CORE\obj\Debug\BMS.CORE.dll
+c:\users\isuru\documents\visual studio 2010\Projects\BankManagementSystem\BMS.CORE\obj\Debug\BMS.CORE.pdb
