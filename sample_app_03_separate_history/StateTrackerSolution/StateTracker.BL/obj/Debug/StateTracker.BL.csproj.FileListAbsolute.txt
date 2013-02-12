@@ -1,0 +1,9 @@
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\bin\Debug\StateTracker.BL.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\bin\Debug\StateTracker.BL.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\bin\Debug\StateTracker.Core.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\bin\Debug\StateTracker.DAL.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\bin\Debug\StateTracker.Core.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\bin\Debug\StateTracker.DAL.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\obj\Debug\StateTracker.BL.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.BL\obj\Debug\StateTracker.BL.pdb

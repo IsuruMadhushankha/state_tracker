@@ -1,0 +1,15 @@
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\StateTracker.UI.Properties.Resources.resources
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.UI.exe
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.UI.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.BL.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.Core.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.DAL.dll
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.BL.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.Core.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\bin\Debug\StateTracker.DAL.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\StateTracker.UI.exe
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\StateTracker.UI.pdb
+C:\Users\senura\documents\visual studio 2010\Projects\StateTrackerSolution\StateTracker.UI\obj\x86\Debug\StateTracker.UI.FormBalanceHistory.resources
