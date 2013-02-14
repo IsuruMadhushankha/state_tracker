@@ -268,5 +268,113 @@ namespace BMS.DBH.DbFunctions
         }
 
 
+        /// <summary>
+        /// get Customer ID corresponding to
+        /// the  
+        /// </summary>
+        /// <param name="accNo"></param>
+        /// <returns></returns>
+        public string getCustomrId(string accNo)
+        {
+            DbConnect dbConnect = new DbConnect();
+            SqlConnection con = dbConnect.getDbConnection();
+            string customerId = null;
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("getCustomerId", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@accNo", accNo));
+                SqlDataReader read = null;
+                read = cmd.ExecuteReader();
+                if (read.Read())
+                {
+                    customerId = read["custId"].ToString();
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return customerId;
+        }
+        
+        /// <summary>
+        /// get currect details of the customer 
+        /// for givan account number
+        /// </summary>
+        /// <param name="accNo"></param>
+        /// <returns></returns>
+        public Customer getCustomerDetails(string accNo)
+        {
+            string customerId = getCustomrId(accNo);
+
+            DbConnect dbConnect = new DbConnect();
+            SqlConnection con = dbConnect.getDbConnection();
+            //Customer customer = new Customer();
+            string c_name = "";
+            string c_address = "";
+            string c_email = "";
+            string c_contact = "";
+            try
+            {
+                con.Open();
+                SqlCommand cmd1 = new SqlCommand("getCurrentCustomerName", con);
+                cmd1.CommandType = CommandType.StoredProcedure;
+                cmd1.Parameters.Add(new SqlParameter("@customerId", customerId));
+                SqlDataReader read1 = null;
+                read1 = cmd1.ExecuteReader();
+                if (read1.Read())
+                {
+                    c_name = read1["name"].ToString();
+                }
+
+                SqlCommand cmd2 = new SqlCommand("getCurrentCustomerAddress", con);
+                cmd2.CommandType = CommandType.StoredProcedure;
+                cmd2.Parameters.Add(new SqlParameter("@customerId", customerId));
+                SqlDataReader read2 = null;
+                read2 = cmd2.ExecuteReader();
+                if (read2.Read())
+                {
+                    c_address = read2["address"].ToString();
+                }
+
+                SqlCommand cmd3 = new SqlCommand("getCurrentCustomerEmail", con);
+                cmd3.CommandType = CommandType.StoredProcedure;
+                cmd3.Parameters.Add(new SqlParameter("@customerId", customerId));
+                SqlDataReader read3 = null;
+                read3 = cmd3.ExecuteReader();
+                if (read3.Read())
+                {
+                    c_email = read3["email"].ToString();
+                }
+
+                SqlCommand cmd4 = new SqlCommand("getCurrentCustomerContact", con);
+                cmd4.CommandType = CommandType.StoredProcedure;
+                cmd4.Parameters.Add(new SqlParameter("@customerId", customerId));
+                SqlDataReader read4 = null;
+                read4 = cmd4.ExecuteReader();
+                if (read4.Read())
+                {
+                    c_contact = read4["contactNo"].ToString();
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            Customer customer = new Customer(customerId, c_name, c_address, c_email, c_contact);
+            return customer;
+        }
     }
 }

@@ -214,10 +214,53 @@ namespace BMS.DBH.DbFunctions
         /// </summary>
         /// <param name="accNo"></param>
         /// <returns></returns>
-        //public Boolean deleteAccount(string accNo)
-        //{
+        public Boolean deleteAccount(string accNo)
+        {
+            ManageCustomer mc = new ManageCustomer();
+            Customer customer = mc.getCustomerDetails(accNo);
+
+            DbConnect dbConnect = new DbConnect();
+            SqlConnection con = dbConnect.getDbConnection();
             
-        //}
+            try
+            {
+                con.Open();
+                SqlCommand cmd1 = new SqlCommand("deleteCustomerName", con);
+                cmd1.CommandType = CommandType.StoredProcedure;
+                cmd1.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+                cmd1.Parameters.Add(new SqlParameter("@name", customer.name));
+                cmd1.ExecuteNonQuery();
+
+                SqlCommand cmd2 = new SqlCommand("deleteCustomerAddress", con);
+                cmd2.CommandType = CommandType.StoredProcedure;
+                cmd2.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+                cmd2.Parameters.Add(new SqlParameter("@currentAddress", customer.name));
+                cmd2.ExecuteNonQuery();
+                
+                SqlCommand cmd3 = new SqlCommand("deleteCustomerEmail", con);
+                cmd3.CommandType = CommandType.StoredProcedure;
+                cmd3.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+                cmd3.Parameters.Add(new SqlParameter("@currentEmail", customer.email));
+                cmd3.ExecuteNonQuery();
+                               
+                SqlCommand cmd4 = new SqlCommand("deleteCustomerContact", con);
+                cmd4.CommandType = CommandType.StoredProcedure;
+                cmd4.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+                cmd4.Parameters.Add(new SqlParameter("@currentContact", customer.contact));
+                cmd4.ExecuteNonQuery();
+                
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            return true;    
+        }
 
 
     }
