@@ -12,6 +12,7 @@ namespace BMS.CORE
         public string customerId { get; set; }
         public string contact { get; set; }
         public string email { get; set; }
+        public string status { get; set; }
 
         public Customer(string customerId, string name, string address, string email,string contact)
         {
@@ -21,6 +22,7 @@ namespace BMS.CORE
             this.customerId = customerId;
             this.contact = contact;
             this.email = email;
+            status = "c";
 
         }
     }

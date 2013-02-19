@@ -9,10 +9,10 @@ namespace BMS.BL
 {
     public class InsertEmployee
     {
-        public void insertEmployee(string empId,string name,string address,string email,string contactNo)
+        public void insertEmployee(string empId,string name,string address,string email,string[] contactNos)
         {
             ManageEmployee me = new ManageEmployee();
-            me.insertEmployee(empId, name, address, email, contactNo);
+            me.insertEmployee(empId, name, address, email, contactNos);
         }
     }
 }

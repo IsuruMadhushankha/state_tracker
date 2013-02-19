@@ -36,5 +36,37 @@ namespace BMS.DBH.DbFunctions
                 con.Close();
             }
         }
+
+        public string getCurrentBranchCode(string accNo)
+        {
+            DbConnect dbConnect = new DbConnect();
+            SqlConnection con = dbConnect.getDbConnection();
+            string branchCode = null;
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("getCurrentBranchCode", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@accNo", accNo));
+                SqlDataReader read = null;
+                read = cmd.ExecuteReader();
+                if (read.Read())
+                {
+                    branchCode = read["branchCode"].ToString();
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+            return branchCode;
+        }
     }
 }

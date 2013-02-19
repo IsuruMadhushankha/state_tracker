@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BMS.BL\BMS.BL.csproj">
+      <Project>{E9DCE316-2113-451C-94E6-DA2944AAA3D5}</Project>
+      <Name>BMS.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BMS.DBH\BMS.DBH.csproj">
       <Project>{4583844C-BA4E-45EE-BFA7-32ABBC91A570}</Project>
       <Name>BMS.DBH</Name>

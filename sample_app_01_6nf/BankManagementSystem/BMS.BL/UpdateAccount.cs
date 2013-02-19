@@ -39,6 +39,10 @@ namespace BMS.BL
             int current_balance = Convert.ToInt32(ma.getCurrentBalance(accNo));
             int debit = Convert.ToInt32(amount);
             int new_balance = current_balance - debit;
+            if (new_balance < 0)
+            {
+                new_balance = 0;
+            }
             // update the account balance
             ma.updateAccount(accNo, new_balance.ToString());
         }

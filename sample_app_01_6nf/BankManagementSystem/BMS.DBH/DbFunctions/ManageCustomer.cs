@@ -229,6 +229,43 @@ namespace BMS.DBH.DbFunctions
             DbConnect dbConnect = new DbConnect();
             SqlConnection con = dbConnect.getDbConnection();
 
+            //try
+            //{
+            //    con.Open();
+            //    SqlCommand cmd1 = new SqlCommand("deleteCustomerName", con);
+            //    cmd1.CommandType = CommandType.StoredProcedure;
+            //    cmd1.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+            //    cmd1.Parameters.Add(new SqlParameter("@name", customer.name));
+            //    cmd1.ExecuteNonQuery();
+
+            //    SqlCommand cmd2 = new SqlCommand("deleteCustomerAddress", con);
+            //    cmd2.CommandType = CommandType.StoredProcedure;
+            //    cmd2.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+            //    cmd2.Parameters.Add(new SqlParameter("@address", customer.address));
+            //    cmd2.ExecuteNonQuery();
+
+            //    SqlCommand cmd3 = new SqlCommand("deleteCustomerEmail", con);
+            //    cmd3.CommandType = CommandType.StoredProcedure;
+            //    cmd3.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+            //    cmd3.Parameters.Add(new SqlParameter("@email", customer.email));
+            //    cmd3.ExecuteNonQuery();
+
+            //    SqlCommand cmd4 = new SqlCommand("deleteCustomerContact", con);
+            //    cmd4.CommandType = CommandType.StoredProcedure;
+            //    cmd4.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
+            //    cmd4.Parameters.Add(new SqlParameter("@contact", customer.contact));
+            //    cmd4.ExecuteNonQuery();
+
+            //}
+            //catch (SqlException ex)
+            //{
+            //    throw ex;
+            //}
+            //finally
+            //{
+            //    con.Close();
+            //}
+
             try
             {
                 con.Open();
@@ -241,19 +278,19 @@ namespace BMS.DBH.DbFunctions
                 SqlCommand cmd2 = new SqlCommand("deleteCustomerAddress", con);
                 cmd2.CommandType = CommandType.StoredProcedure;
                 cmd2.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
-                cmd2.Parameters.Add(new SqlParameter("@address", customer.address));
+                cmd2.Parameters.Add(new SqlParameter("@currentAddress", customer.name));
                 cmd2.ExecuteNonQuery();
 
                 SqlCommand cmd3 = new SqlCommand("deleteCustomerEmail", con);
                 cmd3.CommandType = CommandType.StoredProcedure;
                 cmd3.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
-                cmd3.Parameters.Add(new SqlParameter("@email", customer.email));
+                cmd3.Parameters.Add(new SqlParameter("@currentEmail", customer.email));
                 cmd3.ExecuteNonQuery();
 
                 SqlCommand cmd4 = new SqlCommand("deleteCustomerContact", con);
                 cmd4.CommandType = CommandType.StoredProcedure;
                 cmd4.Parameters.Add(new SqlParameter("@customerId", customer.customerId));
-                cmd4.Parameters.Add(new SqlParameter("@contact", customer.contact));
+                cmd4.Parameters.Add(new SqlParameter("@currentContact", customer.contact));
                 cmd4.ExecuteNonQuery();
 
             }
@@ -375,6 +412,37 @@ namespace BMS.DBH.DbFunctions
 
             Customer customer = new Customer(customerId, c_name, c_address, c_email, c_contact);
             return customer;
+        }
+
+        public int getCustomerCount(string customerId)
+        {
+            DbConnect dbConnect = new DbConnect();
+            SqlConnection con = dbConnect.getDbConnection();
+            int customerCount=0;
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("getCustomerCount", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@customerId", customerId));
+                SqlDataReader read = null;
+                read = cmd.ExecuteReader();
+                if (read.Read())
+                {
+                    customerCount = Convert.ToInt32(read["customerCount"]);
+                }
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
+            return customerCount;
         }
     }
 }
